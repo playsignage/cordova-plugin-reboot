@@ -1,2 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-reboot" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>Reboot</name><js-module name="Reboot" src="www/Reboot.js"><clobbers target="cordova.plugins.Reboot" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="Reboot"><param name="android-package" value="dk.fadeit.reboot.Reboot" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/Reboot.java" target-dir="src/dk/fadeit/reboot/Reboot" /></platform></plugin>
+<plugin id="cordova-plugin-reboot" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Reboot</name>
+    <js-module name="Reboot" src="www/Reboot.js">
+        <clobbers target="cordova.plugins.Reboot" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Reboot">
+                <param name="android-package" value="dk.fadeit.reboot.Reboot" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/Reboot.java" target-dir="src/dk/fadeit/reboot/Reboot" />
+    </platform>
+</plugin>
